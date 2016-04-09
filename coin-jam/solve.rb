@@ -40,7 +40,7 @@ rest.each do |line|
 
     unless interpretations.any? { |i| Prime.prime?(i) }
 
-      divisors = Set.new(
+      divisors = Set.new
       coins[coin] = divisors.to_a
       break if coins.size == count
     end
